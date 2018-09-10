@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #241C1C;
+    .container{
+        nav{
+            span{
+                color: #F0FCF7;
+                font-family: Tahoma;
+                font-size: 20px;
+                margin: 0% auto;
+            }
+        }
+    }
+}
+.searchpart{
+    padding: 2% 0% 4% 0%;
+    height: 20px;
+    @media (max-width: 576px) {
+        padding: 2% 5% 4% 5%;
+    }
+    .txt{
+        padding-top: .5%;
+    }
+    input{
+        width: 100%;
+        padding: 1%;
+    }
+}
+.result{
+    margin: 0% auto;
+    @media (max-width: 768px) {
+        margin-top: 10%;
+    }
+    @media (max-width: 576px) {
+        margin-top: 28%;
+    }
+    .profile{
+        .card{
+            .card-body{
+                .img{
+                    img{
+                        width: 100%;
+                        padding-bottom: 10%;
+                    }
+                }
+                ul{
+                    padding-top: 3%;
+                }
+            }
+        }
+    }
+}
