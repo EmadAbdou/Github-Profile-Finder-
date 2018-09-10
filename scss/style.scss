@@ -46,10 +46,37 @@ header{
                         padding-bottom: 10%;
                     }
                 }
+                .spans{
+                    @media (max-width: 576px) {
+                        padding: 6% 0%;
+                    }
+                }
                 ul{
                     padding-top: 3%;
                 }
             }
+        }
+    }
+}
+#repos{
+    .repocont{
+        width: 100%;
+        vertical-align: middle;
+        border: 1px solid #eee;
+        padding: 2% .3%;
+        margin-top: 1%;
+    }
+    .repores{
+        display: inline-block;
+        margin: 0%;
+        padding: 0% 1%;
+        @media (max-width: 576px) {
+            border-bottom: 1px solid #eee;
+            padding: 2% 1%;
+        }
+        &:last-child{
+            display: inline;
+            padding: 0% 2%;
         }
     }
 }

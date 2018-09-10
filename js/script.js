@@ -23,20 +23,20 @@ $(document).ready(function () {
                     success: function (repos) {
                         $.each(repos, function (index, repo) {
                              $('#repos').append(`
-                             <div class="list-group">
-                                <li class="list-group-item">
-                                    <div class="col-md-6">
+                             <div class="repocont">
+                                <div class="d-block">
+                                    <div class=" col-lg-6 col-md-6 repores">
                                         <strong> ${repo.name} </strong>: ${repo.description}
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class=" col-lg-3 col-md-3 repores">
                                         <span class="badge badge-dark ">Forks : ${repo.forks_count}</span>
                                         <span class="badge badge-info ">Watches : ${repo.watchers_count}</span>
                                         <span class="badge badge-primary ">Stars : ${repo.stargazers_count}</span>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-lg-3 col-md-3  repores">
                                        <a href="${repo.html_url}" target="_blank" class="btn btn-dark">Repo Page</a>
                                     </div>
-                                </li>
+                                </div>
                              </div>
                              `);
                         });
@@ -54,10 +54,12 @@ $(document).ready(function () {
                                 <a target="_blank" class="btn btn-primary btn-block" href="${user.html_url}"> View Profile</a>
                             </div>
                             <div class="col-lg-9 col-md-9">
-                                <span class="badge badge-dark">Public Repos : ${user.public_repos}</span>
-                                <span class="badge badge-info">Public Gists : ${user.public_gists}</span>
-                                <span class="badge badge-primary">Followers : ${user.followers}</span>
-                                <span class="badge badge-secondary">Following : ${user.following}</span>
+                                <div class="spans">
+                                    <span class="badge badge-dark">Public Repos : ${user.public_repos}</span>
+                                    <span class="badge badge-info">Public Gists : ${user.public_gists}</span>
+                                    <span class="badge badge-primary">Followers : ${user.followers}</span>
+                                    <span class="badge badge-secondary">Following : ${user.following}</span>
+                                </div>
                                 <ul class="list-group">
                                     <li class="list-group-item">Company : ${user.company} </li>
                                     <li class="list-group-item">Website/Blog : ${user.blog}</li>
@@ -77,7 +79,6 @@ $(document).ready(function () {
                         </div>
                     </div>
                 </div>
-
                 `
                 );
             }

@@ -33,7 +33,28 @@ header {
   .result .profile .card .card-body .img img {
     width: 100%;
     padding-bottom: 10%; }
+  @media (max-width: 576px) {
+    .result .profile .card .card-body .spans {
+      padding: 6% 0%; } }
   .result .profile .card .card-body ul {
     padding-top: 3%; }
+
+#repos .repocont {
+  width: 100%;
+  vertical-align: middle;
+  border: 1px solid #eee;
+  padding: 2% .3%;
+  margin-top: 1%; }
+#repos .repores {
+  display: inline-block;
+  margin: 0%;
+  padding: 0% 1%; }
+  @media (max-width: 576px) {
+    #repos .repores {
+      border-bottom: 1px solid #eee;
+      padding: 2% 1%; } }
+  #repos .repores:last-child {
+    display: inline;
+    padding: 0% 2%; }
 
 /*# sourceMappingURL=style.css.map */
